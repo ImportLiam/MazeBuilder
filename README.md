@@ -1,10 +1,4 @@
 # MazeBuilder
-Build a maze
+My study of python and algorithm implementation.
 
-## This is my first project on github
-
-### This is how i am gonna do it 
-
-- add code
-- use git commands
-- update python files
+## This is my third project in python
