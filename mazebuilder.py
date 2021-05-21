@@ -14,7 +14,7 @@ class Cell:
         self.x, self.y = x, y
         self.walls = {'N': True, 'S': True, 'E': True, 'W': True}
         
-        def has_all_walls(self):
+        def has_all_walls (self):
             #checks to see if the cell has its walls
             return all(self.walls.values())
         
@@ -48,7 +48,7 @@ class Maze:
                 if self.maze_map[x][y].walls['E']:
                     maze_row.append(' |')
                 else:
-                    maze_rows.append [('')]
+                    maze_rows.append ([('')])
             maze_rows.append(''.join(maze_row))
             maze_row = ['|']
         for x in range(self.nx):
@@ -147,8 +147,7 @@ nx, ny = 15, 15
 ix, iy = 0, 0
 
 
-maze = maze (nx, ny, ix, iy)
-maze.make_maze ()
+maze = ((nx, ny, ix, iy), maze.make_maze ())
 
 print(maze)
 maze.write_svg ('maze.svg')
