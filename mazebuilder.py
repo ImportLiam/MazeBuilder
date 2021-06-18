@@ -66,7 +66,7 @@ def write_svg(self, filename):
     aspect_ratio = self.nx / self.ny
     padding = 10
     #padding the maze all around the maze by the prescribed amount
-    height = 500
+    height = 1000
     width = int(height * aspect_ratio)
     #height & with of the maze image without padding
     scy, scx = height / self.ny, width / self.nx
@@ -147,9 +147,10 @@ nx, ny = 15, 15
 ix, iy = 0, 0
 
 
-maze = ((nx, ny, ix, iy), maze.make_maze ())
+def Maze ((nx, ny, ix, iy) make_maze)
 
-print(maze)
+print ('maze')
+
 maze.write_svg ('maze.svg')
         
             
